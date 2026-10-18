@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ο Μακεδονικός Αγώνας και ο Παύλος Μελάς</title>
+<style>
+  body{font-family:Arial,Helvetica,sans-serif;font-size:24px;line-height:1.6;max-width:900px;margin:0 auto;padding:24px;color:#1b1b1b;background:#fff}
+  h1{font-size:40px;text-align:center;color:#1f4e79;margin-bottom:8px}
+  h2{font-size:30px;color:#1f4e79;border-bottom:3px solid #1f4e79;padding-bottom:4px;margin-top:36px}
+  .box{background:#eef4fb;border-left:8px solid #1f4e79;padding:12px 20px;border-radius:8px}
+  ul{padding-left:28px} li{margin-bottom:10px}
+  select{font-size:22px;padding:4px 8px;margin:0 4px}
+  .q{margin:14px 0}
+  .ok{background:#d4edda} .no{background:#f8d7da}
+  button{font-size:24px;padding:12px 28px;margin:16px 8px 0 0;border:none;border-radius:10px;background:#1f4e79;color:#fff;cursor:pointer}
+  button.sec{background:#6c757d}
+  #res{font-size:26px;font-weight:bold;margin-top:14px}
+  textarea{width:100%;font-size:22px;height:130px;box-sizing:border-box}
+  footer{text-align:center;margin-top:40px;font-size:20px;color:#555}
+</style>
+</head>
+<body>
+<h1>Ο Μακεδονικός Αγώνας και ο Παύλος Μελάς</h1>
+
+<h2>Διάβασε</h2>
+<div class="box">
+<ul>
+<li>Στις αρχές του 1900 η Μακεδονία ανήκε ακόμα στην <b>Οθωμανική Αυτοκρατορία</b>.</li>
+<li>Εκεί ζούσαν πολλοί Έλληνες. Ένοπλες βουλγαρικές ομάδες προσπαθούσαν να τους πείσουν ή να τους αναγκάσουν να αλλάξουν τη γλώσσα και τα φρονήματά τους.</li>
+<li>Από το <b>1904 έως το 1908</b> πολλοί Έλληνες οργάνωσαν αντίσταση. Τους λέμε <b>Μακεδονομάχους</b>.</li>
+<li>Ο <b>Παύλος Μελάς</b> ήταν αξιωματικός του ελληνικού στρατού. Γεννήθηκε το 1870 στη Μασσαλία. Το καλοκαίρι του 1904 πήγε στη Μακεδονία με το ψευδώνυμο <b>Μίκης Ζέζας</b>.</li>
+<li>Σκοτώθηκε τον Οκτώβριο του 1904 στη <b>Στάτιστα</b>, κοντά στην Καστοριά. Ο θάνατός του συγκίνησε όλους τους Έλληνες.</li>
+<li>Η Μακεδονία απελευθερώθηκε στους <b>Βαλκανικούς Πολέμους</b> (1912–1913).</li>
+</ul>
+</div>
+
+<h2>Άσκηση 1: Σωστό ή Λάθος;</h2>
+<div class="q">1. Ο Μακεδονικός Αγώνας έγινε από το 1904 έως το 1908.
+  <select data-a="Σ"><option value="">—</option><option>Σ</option><option>Λ</option></select></div>
+<div class="q">2. Ο Παύλος Μελάς ήταν αξιωματικός.
+  <select data-a="Σ"><option value="">—</option><option>Σ</option><option>Λ</option></select></div>
+<div class="q">3. Ο Παύλος Μελάς σκοτώθηκε στη Στάτιστα.
+  <select data-a="Σ"><option value="">—</option><option>Σ</option><option>Λ</option></select></div>
+<div class="q">4. Το 1904 η Μακεδονία ήταν ελεύθερη και ανήκε στην Ελλάδα.
+  <select data-a="Λ"><option value="">—</option><option>Σ</option><option>Λ</option></select></div>
+
+<h2>Άσκηση 2: Συμπλήρωσε</h2>
+<div class="q">1. Οι Έλληνες αγωνιστές της Μακεδονίας λέγονται
+  <select data-a="Μακεδονομάχοι"><option value="">—</option><option>Μακεδονομάχοι</option><option>Αργοναύτες</option><option>Κλέφτες</option></select>.</div>
+<div class="q">2. Ο Παύλος Μελάς χρησιμοποίησε το ψευδώνυμο
+  <select data-a="Μίκης Ζέζας"><option value="">—</option><option>Μίκης Ζέζας</option><option>Τέλλος Άγρας</option><option>Κίτσος Τζαβέλας</option></select>.</div>
+<div class="q">3. Τη Μακεδονία τότε την κατείχε η
+  <select data-a="Οθωμανική"><option value="">—</option><option>Οθωμανική</option><option>Ρωμαϊκή</option><option>Βενετική</option></select>
+  Αυτοκρατορία.</div>
+<div class="q">4. Η Μακεδονία απελευθερώθηκε στους
+  <select data-a="Βαλκανικούς"><option value="">—</option><option>Βαλκανικούς</option><option>Περσικούς</option><option>Πελοποννησιακούς</option></select>
+  Πολέμους.</div>
+
+<button onclick="check()">Έλεγχος</button>
+<button class="sec" onclick="resetAll()">Από την αρχή</button>
+<div id="res"></div>
+
+<h2>Άσκηση 3: Σκέψου και γράψε</h2>
+<p>Γιατί νομίζεις ότι ο Παύλος Μελάς άφησε την οικογένειά του και πήγε στη Μακεδονία;</p>
+<textarea></textarea>
+
+<footer>© myspiderwebsite</footer>
+
+<script>
+function check(){
+  var s=document.querySelectorAll('select[data-a]'),n=0;
+  s.forEach(function(e){
+    e.classList.remove('ok','no');
+    if(e.value===e.dataset.a){e.classList.add('ok');n++}
+    else if(e.value!==''){e.classList.add('no')}
+  });
+  document.getElementById('res').textContent=n+' σωστά στα '+s.length+(n===s.length?' — Μπράβο! 🎉':'')
+}
+function resetAll(){
+  document.querySelectorAll('select[data-a]').forEach(function(e){e.value='';e.classList.remove('ok','no')});
+  document.getElementById('res').textContent='';
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Αγγελική Φιλιππίδου: μια δασκάλα του Μακεδονικού Αγώνα</title>
+<style>
+  body{font-family:Arial,Helvetica,sans-serif;font-size:24px;line-height:1.6;max-width:900px;margin:0 auto;padding:24px;color:#1b1b1b;background:#fff}
+  h1{font-size:40px;text-align:center;color:#1f4e79;margin-bottom:8px}
+  h2{font-size:30px;color:#1f4e79;border-bottom:3px solid #1f4e79;padding-bottom:4px;margin-top:36px}
+  .box{background:#eef4fb;border-left:8px solid #1f4e79;padding:12px 20px;border-radius:8px}
+  ul{padding-left:28px} li{margin-bottom:10px}
+  select{font-size:22px;padding:4px 8px;margin:0 4px}
+  .q{margin:14px 0}
+  .ok{background:#d4edda} .no{background:#f8d7da}
+  button{font-size:24px;padding:12px 28px;margin:16px 8px 0 0;border:none;border-radius:10px;background:#1f4e79;color:#fff;cursor:pointer}
+  button.sec{background:#6c757d}
+  #res{font-size:26px;font-weight:bold;margin-top:14px}
+  textarea{width:100%;font-size:22px;height:130px;box-sizing:border-box}
+  footer{text-align:center;margin-top:40px;font-size:20px;color:#555}
+</style>
+</head>
+<body>
+<h1>Αγγελική Φιλιππίδου: μια δασκάλα του Μακεδονικού Αγώνα</h1>
+<h2>Διάβασε</h2>
+<div class="box"><ul>
+<li>Στον Μακεδονικό Αγώνα (1904–1908) οι δάσκαλοι και οι παπάδες ήταν στόχοι των βουλγαρικών ένοπλων σωμάτων (<b>κομιτατζήδων</b>). Κρατούσαν ζωντανή την ελληνική <b>γλώσσα</b>, την παιδεία και τη θρησκεία στα χωριά.</li>
+<li>Το 1906 η <b>Αγγελική Φιλιππίδου</b> ήταν νεαρή δασκάλα στην <b>Αγριανή Σερρών</b>.</li>
+<li>Την απειλούσαν, αλλά εκείνη δεν έφυγε από το σχολείο και τους μαθητές της.</li>
+<li>Οι κομιτατζήδες της επιτέθηκαν. Τραυματίστηκε βαριά και πέθανε λίγο αργότερα.</li>
+<li>Ο τάφος της είναι στο κοιμητήριο της <b>Ευαγγελίστριας</b> στη Θεσσαλονίκη. Εκεί αναπαύονται και άλλες τρεις δασκάλες του Αγώνα: η Λίλη Βλάχου, η Αικατερίνη Χατζηγεωργίου και η Βελίκα Τράικου.</li>
+</ul></div>
+<h2>Άσκηση 1: Σωστό ή Λάθος;</h2>
+<div class="q">1. Η Αγγελική Φιλιππίδου ήταν δασκάλα. <select data-a="Σ"><option value="">—</option><option>Σ</option><option>Λ</option></select></div>
+<div class="q">2. Το 1906 δίδασκε στην Αγριανή Σερρών. <select data-a="Σ"><option value="">—</option><option>Σ</option><option>Λ</option></select></div>
+<div class="q">3. Όταν την απείλησαν, εγκατέλειψε το σχολείο. <select data-a="Λ"><option value="">—</option><option>Σ</option><option>Λ</option></select></div>
+<div class="q">4. Οι δάσκαλοι βοηθούσαν να μείνει ζωντανή η ελληνική γλώσσα στα χωριά. <select data-a="Σ"><option value="">—</option><option>Σ</option><option>Λ</option></select></div>
+<h2>Άσκηση 2: Συμπλήρωσε</h2>
+<div class="q">1. Η Αγγελική υπηρετούσε ως δασκάλα στην <select data-a="Αγριανή"><option value="">—</option><option>Αγριανή</option><option>Καστοριά</option><option>Θάσο</option></select> Σερρών.</div>
+<div class="q">2. Οι δάσκαλοι κρατούσαν ζωντανή την ελληνική <select data-a="γλώσσα"><option value="">—</option><option>γλώσσα</option><option>μουσική</option><option>κουζίνα</option></select> .</div>
+<div class="q">3. Ο τάφος της βρίσκεται στο κοιμητήριο της <select data-a="Ευαγγελίστριας"><option value="">—</option><option>Ευαγγελίστριας</option><option>Αγίας Σοφίας</option><option>Αναλήψεως</option></select> στη Θεσσαλονίκη.</div>
+<div class="q">4. Μαζί της αναπαύονται άλλες <select data-a="τρεις"><option value="">—</option><option>δύο</option><option>τρεις</option><option>πέντε</option></select> δασκάλες του Αγώνα.</div>
+<button onclick="check()">Έλεγχος</button>
+<button class="sec" onclick="resetAll()">Από την αρχή</button>
+<div id="res"></div>
+
+<h2>Άσκηση 3: Σκέψου και γράψε</h2>
+<p>Γιατί νομίζεις ότι οι δάσκαλοι ήταν τόσο σημαντικοί στον Μακεδονικό Αγώνα;</p>
+<textarea></textarea>
+
+<footer>© myspiderwebsite</footer>
+
+<script>
+function check(){
+  var s=document.querySelectorAll('select[data-a]'),n=0;
+  s.forEach(function(e){
+    e.classList.remove('ok','no');
+    if(e.value===e.dataset.a){e.classList.add('ok');n++}
+    else if(e.value!==''){e.classList.add('no')}
+  });
+  document.getElementById('res').textContent=n+' σωστά στα '+s.length+(n===s.length?' — Μπράβο! 🎉':'')
+}
+function resetAll(){
+  document.querySelectorAll('select[data-a]').forEach(function(e){e.value='';e.classList.remove('ok','no')});
+  document.getElementById('res').textContent='';
+}
+</script>
+</body>
+</html>
